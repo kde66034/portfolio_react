@@ -1,0 +1,167 @@
+/* listOfMyWork */
+.listOfMyWork__wrap {
+    display: flex;
+    justify-content: space-between;
+    background: #0B130D;
+    color: #fff;
+}
+.listOfMyWork__wrap .titleDesc {
+    width: 28%;
+    margin-left: 40px;
+    padding-top: 16vh;
+}
+.titleDesc > hr {
+    margin: 4vh 0;
+    height: 1px;
+    background-color: #555;
+    border: none;
+}
+.titleDesc .listOfMyWork__title {
+    font-size: 5vw;
+    line-height: 1.2;
+    color: #D2E3C0;
+}
+.titleDesc .listOfMyWork__desc {
+    line-height: 1.6;
+    text-align: justify;
+}
+.listOfMyWork__wrap .workList {
+    width: 62%;
+    margin-right: 40px;
+    margin-top: 16vh;
+    margin-bottom: 16vh;
+}
+.workList summary {
+    padding: 3vh 1vw;
+    display: block;
+    border-bottom: 1px solid #555;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+.workList summary:hover {
+    background-color: rgb(26, 31, 28);
+}
+details[open] summary {
+    background-color: rgb(26, 31, 28);
+}
+/* details[open] summary:hover {
+    background-color: #161a17;
+} */
+.first_summary {
+    border-top: 1px solid #555;
+}
+summary .work__title {
+    font-size: 24px;
+}
+/* summary .work__btn {
+    background-image: url(assets/img/detail_btn.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 2vw;
+    height: 2vw;
+    transition: transform 0.3s;
+} */
+summary .work__btn {
+    background: #262626;
+    background-image: url(../img/detail_btn.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    transition: transform 0.3s;
+    filter: invert(100%);
+}
+
+details[open] .work__btn {
+    transform: rotate(180deg);
+}
+.work__desc__wrap .work__img {
+    margin-top: 1vw;
+}
+.work__desc > p {
+    padding: 20px 10px 20px 10px;
+    box-sizing: border-box;
+    line-height: 1.6;
+    column-count: 2;
+    text-align: justify;
+}
+
+.work__button__wrap {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+.work__button > button {
+    font-family: 'Poppins';
+    font-weight: 400;
+    text-transform: uppercase;
+    position: relative;
+    padding: 8px 30px;
+    font-size: 18px;
+    background: transparent;
+    border: 1px dashed #fff;
+    color: #fff;
+    cursor: pointer;
+    /* transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s; */
+    margin-right: 0.5vw;
+}
+/* .work__button > button:hover {
+    background-color: transparent;
+    text-shadow: none;
+    color: #000;
+}
+.work__button > button:hover:before {
+    bottom: 0%;
+    top: auto;
+    height: 100%;
+}
+.work__button > button:before {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    z-index: -1;
+    content: '';
+    background: #D2E3C0;
+    transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+} */
+
+/* 반응형 */
+@media (max-width: 1100px) {
+    .listOfMyWork__wrap {
+        flex-direction: column;
+    }
+    .listOfMyWork__wrap .titleDesc {
+        width: 100%;
+        margin-left: 0;
+        padding: 16vh 3vw 0 3vw;
+    }
+    .listOfMyWork__wrap .workList {
+        width: 100%;
+        margin-top: 8vh;
+        padding: 0 3vw;
+    }
+}
+@media (max-width: 800px) {
+    .titleDesc .listOfMyWork__title {
+        font-size: 8vw;
+    }
+}
+@media (max-width: 500px) {
+    .titleDesc .listOfMyWork__title {
+        font-size: 9vw;
+    }
+}
+@media (max-width: 400px) {
+    .titleDesc .listOfMyWork__title {
+        font-size: 10vw;
+    }
+}
