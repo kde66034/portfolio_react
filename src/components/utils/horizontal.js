@@ -2,7 +2,7 @@ import React from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
 
-const horizontal = () => {
+function horizontal() {
     gsap.registerPlugin(ScrollTrigger);
 
     const sections = gsap.utils.toArray(".section");
@@ -15,7 +15,6 @@ const horizontal = () => {
             pin: true,
             scrub: 1,
             end: "+=5000",
-            markers: true,
         },
     });
 }

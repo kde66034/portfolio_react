@@ -1,8 +1,29 @@
 import React from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
+import Lenis from '@studio-freight/lenis';
 
 const gsapAnimation = () => {
+    document.querySelectorAll(".split").forEach(desc => {
+        let splitText = desc.innerText;
+        let splitWrap = splitText.split('').join("</span><span aria-hidden='true'>");
+            splitWrap = "<span aria-hidden='true'>" + splitWrap + "</span>";
+            desc.innerHTML = splitWrap;
+            desc.setAttribute("aria-label", splitText);
+    })
+
+    const lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    })
+    
+    function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+    }
+    
+    requestAnimationFrame(raf)
+
     gsap.registerPlugin(ScrollTrigger);
 
     // 인트로 애니메이션

@@ -1,8 +1,12 @@
 import React from 'react'
 
+const dataSet = {
+  dataColor: "#ffffff"
+};
+
 const WhiteBG = ({children}) => {
     return (
-      <div id="white panel" data-color="white">{children}</div>
+      <div id="backColor white panel" data-color={dataSet.dataColor}>{children}</div>
     );
   }
 

@@ -1,36 +1,35 @@
-import React from 'react'
-import $ from "jquery";
+import React, { useEffect } from 'react'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from "gsap";
 
 const changeBG = () => {
-    $(window).scroll(function() {
-  
-      // selectors
-      var $window = $(window),
-          $body = $('body'),
-          $panel = $('.panel');
+    gsap.utils.toArray(".backColor").forEach((elem) => {
 
-      // Change 22% earlier than scroll position so colour is there when you arrive.
-      var scroll = $window.scrollTop() + ($window.height() / 2);
-
-      $panel.each(function () {
-        var $this = $(this);
-
-        // if position is within range of this panel.
-        // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
-        // Remember we set the scroll to 22% earlier in scroll var.
-        if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
-
-          // Remove all classes on body with color-
-          $body.removeClass(function (index, css) {
-            return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
-          });
-
-          // Add class of currently active div
-          $body.addClass('color-' + $(this).data('color'));
-        }
-      });    
-
-    }).scroll();
+    let color = elem.getAttribute('data-color');
+        
+    ScrollTrigger.create({
+        trigger: elem,
+        start: 'top 20%',
+        end: 'bottom 20%',
+        markers: false,
+            onEnter: () => gsap.to('body', {
+                backgroundColor: color,
+                duration: 0.08
+            }),
+            onLeave: () => gsap.to('body', {
+                backgroundColor: '#FFFFFF',
+                duration: 0.08
+            }),
+            onLeaveBack: () => gsap.to('body', {
+                backgroundColor: '#FFFFFF',
+                duration: 0.08
+            }),
+            onEnterBack: () => gsap.to('body', {
+                backgroundColor: color,
+                duration: 0.08
+            }),
+        });
+    });
 }
 
 export default changeBG

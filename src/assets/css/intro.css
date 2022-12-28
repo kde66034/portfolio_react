@@ -37,7 +37,7 @@
 }
 .txt2 span:nth-child(4),
 .txt2 span:nth-child(9) {
-    margin: 0 1vw;
+    margin: 0 -3vw;
 }
 .txt3 {
     opacity: 0;

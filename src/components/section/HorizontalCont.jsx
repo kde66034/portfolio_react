@@ -2,7 +2,7 @@ import React from 'react'
 
 // webglType 정보
 const webglTypeInfo = {
-    title: "all script works",
+    title: "all　script　works",
     titleClass: "split",
     titleFont: "neue_world_semiultra"
 }

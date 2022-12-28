@@ -1,19 +1,5 @@
 import React from 'react'
 
-// 인트로2 타이틀 정보
-const Intro2TitleInfo = [
-    {
-        title: "kim dong eon’s",
-        titleClass: "intro_txt1",
-        titleFont: "neue_world_semiultra"
-    },
-    {
-        title: 'portfolio <em class="neue_worldCnRg">all</em> walks <em class="neue_worldCnRg">of</em> works',
-        titleClass: "intro_txt2",
-        titleFont: "neue_world_thin"
-    }
-]
-
 // 인트로2 이미지(아이콘) 정보
 const Intro2ImgInfo = [
     {
@@ -27,15 +13,6 @@ const Intro2ImgInfo = [
         imgAlt: "figure02"
     },
 ]
-
-// 인트로2 타이틀 출력
-const Intro2TitleCont = ({title, titleClass, titleFont}) => {
-    return (
-        <div className={`${titleClass} intro2__title ${titleFont}`}>
-            {title}
-        </div>
-    )
-}
 
 // 인트로2 이미지(아이콘) 출력
 const Intro2ImgCont = ({imgClass, imgLink, imgAlt}) => {
@@ -51,9 +28,12 @@ const Intro2 = () => {
     return (
         <section id="intro2Type" className="intro2__type">
             <div className="intro2__title__wrap">
-                {Intro2TitleInfo.map(info => (
-                    <Intro2TitleCont title={info.title} titleClass={info.titleClass} titleFont={info.titleFont} />
-                ))}
+                <div class="intro_txt1 intro2__title neue_world_semiultra">
+                    kim dong eon’s
+                </div>
+                <div class="intro_txt2 intro2__title neue_world_thin">
+                    portfolio <em class="neue_worldCnRg">all</em> walks <em class="neue_worldCnRg">of</em> works
+                </div>
             </div>
             <div className="figureImg2__inner">
                 {Intro2ImgInfo.map(info => (

@@ -10,7 +10,7 @@ const mainContInfo = [
         sectionImgLink: "assets/img/mywork01.jpg",
         sectionBigTitle: "PHP",
         sectionTitle: "PHP Team Project",
-        sectionDesc: "기후위기에 대한 심각성을 알리고 기후<br>행동을 장려하는 웹 사이트 ‘지구ON’을<br>팀 프로젝트로 제작하였습니다."
+        sectionDesc: "기후위기에 대한 심각성을 알리고 기후\n행동을 장려하는 웹 사이트 ‘지구ON’을\n팀 프로젝트로 제작하였습니다."
     },
     {
         sectionID: "myWorkWebStan",
@@ -20,7 +20,7 @@ const mainContInfo = [
         sectionImgLink: "assets/img/mywork09.jpg",
         sectionBigTitle: "Standard",
         sectionTitle: "Web Standard Site",
-        sectionDesc: "Alt 속성과 IR 효과 등을 활용하여 시각<br>장애인을 포함한 누구나 웹서핑을 할 수<br>있도록 웹 표준을 준수한 사이트입니다."
+        sectionDesc: "Alt 속성과 IR 효과 등을 활용하여 시각\n장애인을 포함한 누구나 웹서핑을 할 수\n있도록 웹 표준을 준수한 사이트입니다."
     },
     {
         sectionID: "myWorkRefer",
@@ -30,7 +30,7 @@ const mainContInfo = [
         sectionImgLink: "assets/img/mywork03.jpg",
         sectionBigTitle: "Reference",
         sectionTitle: "Coding Reference Book",
-        sectionDesc: "코딩을 처음 배웠던 시절 저에게 큰 도움이<br>되었던 온라인 상의 레퍼런스 북입니다.<br>HTML과 CSS, JS의 기초를 다뤘습니다."
+        sectionDesc: "코딩을 처음 배웠던 시절 저에게 큰 도움이\n되었던 온라인 상의 레퍼런스 북입니다.\nHTML과 CSS, JS의 기초를 다뤘습니다."
     },
     {
         sectionID: "myWorkReactVue",
@@ -40,7 +40,7 @@ const mainContInfo = [
         sectionImgLink: "assets/img/mywork04.jpg",
         sectionBigTitle: "React/Vue",
         sectionTitle: "React/Vue Site",
-        sectionDesc: "React와 Vue로 각종 정보들을 API로 가져오는<br>웹 사이트를 만들어 보았습니다. YouTube 인기영상,<br>영화 정보, Unsplash 이미지 등 다양한 서비스에서<br>API로 정보들을 가져옵니다."
+        sectionDesc: "React와 Vue로 각종 정보들을 API로 가져오는\n웹 사이트를 만들어 보았습니다. YouTube 인기영상,\n영화 정보, Unsplash 이미지 등 다양한 서비스에서\nAPI로 정보들을 가져옵니다."
     }
 ]
 

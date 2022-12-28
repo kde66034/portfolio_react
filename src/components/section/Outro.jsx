@@ -3,7 +3,7 @@ import React from 'react'
 // 아웃트로 타이틀 정보
 const outroTitleInfo = [
     {
-        title: '<em class="neue_worldCnRg">thank</em> you for <em class="neue_worldCnRg">watching</em>',
+        title: 'thank you for watching',
         titleClass: "outro__title1",
         titleFont: "neue_world_thin"
     },

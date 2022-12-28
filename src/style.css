@@ -2,7 +2,7 @@
 
 /* fonts */
 @import "./assets/css/fonts.css";
-/* @import "./assets/css/eng_fonts.css"; */
+@import "./assets/css/eng_fonts.css";
 
 /* common */
 @import "./assets/css/common.css";

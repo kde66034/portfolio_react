@@ -6,11 +6,9 @@
     src: url('../fonts/ppneueworld-condensedregular-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/ppneueworld-condensedregular-webfont.woff2') format('woff2'),
          url('../fonts/ppneueworld-condensedregular-webfont.woff') format('woff'),
-         url('../fonts/ppneueworld-condensedregular-webfont.ttf') format('truetype'),
-         url('../fonts/ppneueworld-condensedregular-webfont.svg#pp_neue_worldCnRg') format('svg');
+         url('../fonts/ppneueworld-condensedregular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -19,11 +17,9 @@
     src: url('../fonts/ppneueworld-thin-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/ppneueworld-thin-webfont.woff2') format('woff2'),
          url('../fonts/ppneueworld-thin-webfont.woff') format('woff'),
-         url('../fonts/ppneueworld-thin-webfont.ttf') format('truetype'),
-         url('../fonts/ppneueworld-thin-webfont.svg#pp_neue_worldthin') format('svg');
+         url('../fonts/ppneueworld-thin-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -32,8 +28,7 @@
     src: url('../fonts/ppneueworld-semicondensedultrabold-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/ppneueworld-semicondensedultrabold-webfont.woff2') format('woff2'),
          url('../fonts/ppneueworld-semicondensedultrabold-webfont.woff') format('woff'),
-         url('../fonts/ppneueworld-semicondensedultrabold-webfont.ttf') format('truetype'),
-         url('../fonts/ppneueworld-semicondensedultrabold-webfont.svg#pp_neue_worldsemiultra') format('svg');
+         url('../fonts/ppneueworld-semicondensedultrabold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -44,11 +39,9 @@
     src: url('../fonts/ppwriter-book-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/ppwriter-book-webfont.woff2') format('woff2'),
          url('../fonts/ppwriter-book-webfont.woff') format('woff'),
-         url('../fonts/ppwriter-book-webfont.ttf') format('truetype'),
-         url('../fonts/ppwriter-book-webfont.svg#pp_writerbook') format('svg');
+         url('../fonts/ppwriter-book-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -57,20 +50,18 @@
     src: url('../fonts/ppeiko-medium-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/ppeiko-medium-webfont.woff2') format('woff2'),
          url('../fonts/ppeiko-medium-webfont.woff') format('woff'),
-         url('../fonts/ppeiko-medium-webfont.ttf') format('truetype'),
-         url('../fonts/ppeiko-medium-webfont.svg#pp_eiko_medium') format('svg');
+         url('../fonts/ppeiko-medium-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'pp_eiko_italiclight';
-    src: url('../fonts/ppeiko-lightitalic-webfont.eot');
-    src: url('../fonts/ppeiko-lightitalic-webfont?#iefix') format('embedded-opentype'),
-         url('../fonts/ppeiko-lightitalic-webfont.woff2') format('woff2'),
-         url('../fonts/ppeiko-lightitalic-webfont.woff') format('woff'),
-         url('../fonts/ppeiko-lightitalic-webfont.ttf') format('truetype'),
-         url('../fonts/ppeiko-lightitalic-webfont.svg#pp_eiko_italiclight') format('svg');
+    src: url('../fonts/PPEiko-LightItalic.eot');
+    src: url('../fonts/PPEiko-LightItalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/PPEiko-LightItalic.woff2') format('woff2'),
+         url('../fonts/PPEiko-LightItalic.woff') format('woff'),
+         url('../fonts/PPEiko-LightItalic.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -81,8 +72,7 @@
     src: url('../fonts/ppneuemontreal-medium-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/ppneuemontreal-medium-webfont.woff2') format('woff2'),
          url('../fonts/ppneuemontreal-medium-webfont.woff') format('woff'),
-         url('../fonts/ppneuemontreal-medium-webfont.ttf') format('truetype'),
-         url('../fonts/ppneuemontreal-medium-webfont.svg#pp_neue_montreal') format('svg');
+         url('../fonts/ppneuemontreal-medium-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

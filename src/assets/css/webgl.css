@@ -58,7 +58,7 @@
 }
 .webgl__title__wrap .webgl__title span:nth-child(4),
 .webgl__title__wrap .webgl__title span:nth-child(11) {
-    margin: 0 1vw;
+    margin: 0 -3vw;
 }
 
 /* 반응형 */
