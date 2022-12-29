@@ -25,7 +25,7 @@ const gsapAnimation = () => {
     requestAnimationFrame(raf)
 
     gsap.registerPlugin(ScrollTrigger);
-
+    
     // 인트로 애니메이션
     setTimeout(() => {
         let tl = gsap.timeline();
@@ -63,7 +63,6 @@ const gsapAnimation = () => {
     setTimeout(() => {
         let tl = gsap.timeline();
         let tl2 = gsap.timeline();
-        // let tl3 = gsap.timeline();
     
         tl.to(".webgl__title span", {trigger: "#webglType", duration: 0.6, x: 0, y: 0, stagger: 0.09, scale: 1, opacity: 1, ease: "Power3.easeIn"})
         tl2.to(".webgl__title span", {trigger: "#section01", duration: 0.6, x: 0, y: 160, stagger: 0.09, scale: 1, opacity: 0, ease: "Power3.easeOut"})

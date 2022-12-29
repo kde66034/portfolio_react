@@ -5,7 +5,7 @@ import gsap from "gsap";
 function horizontal() {
     gsap.registerPlugin(ScrollTrigger);
 
-    const sections = gsap.utils.toArray(".section");
+    let sections = gsap.utils.toArray(".section");
     
     gsap.to(sections, {
         xPercent: -100 * (sections.length),
